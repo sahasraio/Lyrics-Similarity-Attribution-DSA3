@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>LyricMatch | Lyrics Similarity Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="header">
+
+        <div class="logo">
+            Lyric<span>Match</span>
+        </div>
+
+
+        <nav class="nav">
+
+            <a href="#home">Home</a>
+
+            <a href="#search">Search</a>
+
+            <a href="#catalogue">Catalogue</a>
+
+            <a href="#how-it-works">
+                How It Works
+            </a>
+
+            <a href="#about">About</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HOME / HERO SECTION
+         ===================================================== -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <span class="section-tag">
+                DSA POWERED LYRIC ANALYSIS
+            </span>
+
+
+            <h1>
+                Discover Similarity.
+                <br>
+                Find the Connection.
+            </h1>
+
+
+            <p>
+                Analyze lyrics using Data Structures and
+                Algorithms to discover similar songs and
+                matching passages.
+            </p>
+
+
+            <a href="#search"
+               class="hero-button">
+                Analyze Lyrics
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SEARCH SECTION
+         ===================================================== -->
+
+    <section id="search"
+             class="section search-section">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                LYRIC ANALYZER
+            </span>
+
+
+            <h2>
+                Search Lyrics
+            </h2>
+
+
+            <p>
+                Enter lyrics below and let our algorithms
+                find similar songs from the catalogue.
+            </p>
+
+        </div>
+
+
+
+        <div class="search-card">
+
+            <label for="lyricsInput">
+                Enter Lyrics
+            </label>
+
+
+            <textarea
+                id="lyricsInput"
+                placeholder="Paste or type lyrics here..."
+                rows="8"></textarea>
+
+
+            <div class="button-group">
+
+                <button
+                    id="analyzeButton"
+                    class="primary-button">
+
+                    Analyze Lyrics
+
+                </button>
+
+
+                <button
+                    id="clearButton"
+                    class="secondary-button">
+
+                    Clear
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             RESULTS
+             ================================================= -->
+
+        <div id="resultsContainer">
+
+            <div class="empty-result">
+
+                <div class="empty-icon">
+                    ♪
+                </div>
+
+
+                <h3>
+                    No Analysis Yet
+                </h3>
+
+
+                <p>
+                    Enter lyrics above and click
+                    "Analyze Lyrics" to see results.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         LYRICS CATALOGUE
+         ===================================================== -->
+
+    <section id="catalogue"
+             class="section">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                COLLECTION
+            </span>
+
+
+            <h2>
+                Lyrics Catalogue
+            </h2>
+
+
+            <p>
+                Explore the lyrics currently available
+                for similarity analysis.
+            </p>
+
+        </div>
+
+
+
+        <div class="catalogue-grid">
+
+
+            <!-- SONG 1 -->
+
+            <div class="song-card">
+
+                <div class="song-icon">
+                    ♪
+                </div>
+
+
+                <h3>
+                    song1.txt
+                </h3>
+
+
+                <p>
+                    I walk alone through the night.
+                    I see the stars above me.
+                    I keep walking through the night.
+                    Looking for a better day.
+                </p>
+
+            </div>
+
+
+
+            <!-- SONG 2 -->
+
+            <div class="song-card">
+
+                <div class="song-icon">
+                    ♪
+                </div>
+
+
+                <h3>
+                    song2.txt
+                </h3>
+
+
+                <p>
+                    Walking through the night.
+                    I see the moon above.
+                    My heart is searching.
+                    For someone I love.
+                </p>
+
+            </div>
+
+
+
+            <!-- SONG 3 -->
+
+            <div class="song-card">
+
+                <div class="song-icon">
+                    ♪
+                </div>
+
+
+                <h3>
+                    song3.txt
+                </h3>
+
+
+                <p>
+                    The morning brings a new day.
+                    The sun is shining bright.
+                    I leave behind the darkness.
+                    And walk into the light.
+                </p>
+
+            </div>
+
+
+
+            <!-- SONG 4 -->
+
+            <div class="song-card">
+
+                <div class="song-icon">
+                    ♪
+                </div>
+
+
+                <h3>
+                    song4.txt
+                </h3>
+
+
+                <p>
+                    I walk through the city.
+                    Thinking about yesterday.
+                    The night is cold and quiet.
+                    And I am searching for you.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         HOW IT WORKS / DSA SECTION
+         ===================================================== -->
+
+    <section id="how-it-works"
+             class="section">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                DSA PIPELINE
+            </span>
+
+
+            <h2>
+                How LyricMatch Works
+            </h2>
+
+
+            <p>
+                The system combines multiple Data Structures
+                and Algorithms to analyze and compare lyrics.
+            </p>
+
+        </div>
+
+
+
+        <div class="algorithm-grid">
+
+
+            <!-- STEP 1 -->
+
+            <div class="algorithm-card">
+
+                <div class="algorithm-number">
+                    01
+                </div>
+
+
+                <h3>
+                    Text Processing
+                </h3>
+
+
+                <p>
+                    The entered lyrics are cleaned, converted
+                    to lowercase, and divided into individual
+                    words for analysis.
+                </p>
+
+
+                <span class="algorithm-tag">
+                    Text Processing
+                </span>
+
+            </div>
+
+
+
+            <!-- STEP 2 -->
+
+            <div class="algorithm-card">
+
+                <div class="algorithm-number">
+                    02
+                </div>
+
+
+                <h3>
+                    Jaccard Similarity
+                </h3>
+
+
+                <p>
+                    The system compares the unique words in
+                    the query with the words in each stored
+                    song and calculates a similarity score.
+                </p>
+
+
+                <span class="algorithm-tag">
+                    Set Analysis
+                </span>
+
+            </div>
+
+
+
+            <!-- STEP 3 -->
+
+            <div class="algorithm-card">
+
+                <div class="algorithm-number">
+                    03
+                </div>
+
+
+                <h3>
+                    Merge Sort
+                </h3>
+
+
+                <p>
+                    The calculated similarity scores are sorted
+                    from highest to lowest so the closest
+                    matching songs appear first.
+                </p>
+
+
+                <span class="algorithm-tag">
+                    Sorting
+                </span>
+
+            </div>
+
+
+
+            <!-- STEP 4 -->
+
+            <div class="algorithm-card">
+
+                <div class="algorithm-number">
+                    04
+                </div>
+
+
+                <h3>
+                    KMP Pattern Matching
+                </h3>
+
+
+                <p>
+                    The Knuth-Morris-Pratt algorithm searches
+                    for matching phrases efficiently inside
+                    the stored lyrics.
+                </p>
+
+
+                <span class="algorithm-tag">
+                    Pattern Matching
+                </span>
+
+            </div>
+
+
+
+            <!-- STEP 5 -->
+
+            <div class="algorithm-card">
+
+                <div class="algorithm-number">
+                    05
+                </div>
+
+
+                <h3>
+                    Final Analysis
+                </h3>
+
+
+                <p>
+                    The system combines the similarity ranking
+                    and matching passages and displays the
+                    analysis to the user.
+                </p>
+
+
+                <span class="algorithm-tag">
+                    Result
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ABOUT SECTION
+         ===================================================== -->
+
+    <section id="about"
+             class="section">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                ABOUT THE PROJECT
+            </span>
+
+
+            <h2>
+                Built With Data Structures & Algorithms
+            </h2>
+
+
+            <p>
+                LyricMatch demonstrates how classical DSA
+                techniques can be used to analyze textual
+                similarity in a practical web application.
+            </p>
+
+        </div>
+
+
+
+        <div class="features-grid">
+
+
+            <!-- FEATURE 1 -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    Aa
+                </div>
+
+
+                <h3>
+                    Text Processing
+                </h3>
+
+
+                <p>
+                    Lyrics are cleaned and converted into
+                    words before analysis.
+                </p>
+
+            </div>
+
+
+
+            <!-- FEATURE 2 -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    %
+                </div>
+
+
+                <h3>
+                    Similarity Analysis
+                </h3>
+
+
+                <p>
+                    Jaccard Similarity compares unique words
+                    between the entered lyrics and songs.
+                </p>
+
+            </div>
+
+
+
+            <!-- FEATURE 3 -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🔍
+                </div>
+
+
+                <h3>
+                    Pattern Matching
+                </h3>
+
+
+                <p>
+                    KMP identifies matching phrases efficiently
+                    within stored lyrics.
+                </p>
+
+            </div>
+
+
+
+            <!-- FEATURE 4 -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    ↕
+                </div>
+
+
+                <h3>
+                    Ranking
+                </h3>
+
+
+                <p>
+                    Merge Sort ranks songs according to their
+                    similarity scores.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+        <div class="logo">
+            Lyric<span>Match</span>
+        </div>
+
+
+        <p>
+            DSA-Based Lyrics Similarity and Attribution System
+        </p>
+
+
+        <p>
+            Built using Java, HTML, CSS and JavaScript
+        </p>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
